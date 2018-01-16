@@ -1,8 +1,9 @@
 # Kotlin-Android-Permissions-DeviceInfo
  [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg?maxAge=2592000)](http://www.apache.org/licenses/LICENSE-2.0)
- [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Kotlin--Android--Permissions-green.svg?style=true)](https://android-arsenal.com/details/1/4511)
+
  
-The easiest Kotlin Library for Android Runtime Permissions &amp; Device Info.
+A fork of Kotlin Library for Android Runtime Permissions &amp; Device Info originally created by <a href="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo"> AnirudhLoya</a>
+
 #ScreenShots
 <img src="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo/blob/master/call_permission.png" width="300"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo/blob/master/device-2016-09-24-183505.png" width="300"/> 
@@ -73,6 +74,12 @@ class MainActivity : PermissionsActivity() {
 ```
 #Dependencies
 Add this to your app build.gradle
+```
+implementation 'com.paulinakornatowicz.kotlinpermissions:kotlinpermissions:1.0'
+```
+
+For Android Studio below 3.0 use
+
 ```
 compile 'com.paulinakornatowicz.kotlinpermissions:kotlinpermissions:1.0'
 ```
