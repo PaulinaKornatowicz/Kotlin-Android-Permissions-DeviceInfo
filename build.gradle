@@ -9,7 +9,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // Required plugins added to classpath to facilitate pushing to Jcenter/Bintray
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
@@ -20,14 +19,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven { url 'https://bintray.com/anirudhloya/maven' }
+        maven {
+            url 'https://dl.bintray.com/paulinakornatowicz/maven/'
+        }
     }
-    tasks.withType(Javadoc) {
-        // Ignores errors from mavenAndroidJavadocs task
-        // (reference: github.com/novoda/bintray-release/issues/71#issuecomment-164324255)
-        options.addStringOption('Xdoclint:none', '-quiet')
-        options.addStringOption('encoding', 'UTF-8')
-    }
+    tasks.withType(Javadoc).all { enabled = false }
 }
 task clean(type: Delete) {
     delete rootProject.buildDir
