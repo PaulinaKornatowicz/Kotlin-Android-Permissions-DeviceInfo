@@ -4,12 +4,14 @@
  
 A fork of Kotlin Library for Android Runtime Permissions &amp; Device Info originally created by <a href="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo"> AnirudhLoya</a>
 
-#ScreenShots
+ScreenShots
+--------
 <img src="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo/blob/master/call_permission.png" width="300"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo/blob/master/device-2016-09-24-183505.png" width="300"/> 
 
 
-#Usage For Kotlin
+Usage For Kotlin
+--------
 Your Activity must extends with PermissionsActivity
 ```
 class MainActivity : PermissionsActivity()
@@ -28,7 +30,8 @@ class MainActivity : PermissionsActivity()
             })
 
  ```
-#Sample MainActvity.k
+Sample
+--------
 ```
 import android.Manifest
 import android.os.Bundle
@@ -72,7 +75,8 @@ class MainActivity : PermissionsActivity() {
     }
 }
 ```
-#Dependencies
+Dependencies
+--------
 Add this to your app build.gradle
 ```
 implementation 'com.paulinakornatowicz.kotlinpermissions:kotlinpermissions:1.0'
@@ -83,7 +87,8 @@ For Android Studio below 3.0 use
 ```
 compile 'com.paulinakornatowicz.kotlinpermissions:kotlinpermissions:1.0'
 ```
-#DeviceInfo Usage
+DeviceInfo Usage
+--------
 ```
 DeviceInfo.getBuildBrand()
 DeviceInfo.getAppName(applicationContext)
@@ -141,16 +146,4 @@ DeviceInfo.getAppName(applicationContext)
 | Accounts        | `getAccounts(applicationContext)` | Array<String> |
 | Network Availabilty        | `isNetworkAvailable(applicationContext)` | Boolean |
 | Running On Emulator        | `isRunningOnEmulator(applicationContext)` | Boolean |
-
-
-
-
-
-
-
-
-
-
-
-
 
