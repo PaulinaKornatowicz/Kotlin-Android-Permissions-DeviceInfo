@@ -5,21 +5,21 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'kotlinpermissions'   // Has to be same as your library module name
 
-    publishedGroupId = 'io.vrinda.kotlinpermissions'
+    publishedGroupId = 'com.paulinakornatowicz.kotlinpermissions'
     libraryName = 'Kotlin Android Permissions'
     artifact = 'kotlinpermissions'     // Has to be same as your library module name
 
-    libraryDescription = 'Kotlin Android Permissions View is Kotlin Library for Android to make Runtime Permissions request easy'
+    libraryDescription = 'Kotlin Android Permissions View is Kotlin Library for Android to make Runtime Permissions requests easy'
 
     // Your github repo link
-    siteUrl = 'https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo'
-    gitUrl = 'https://github.com/AnirudhLoya/Kotlin-Android-Permissions-DeviceInfo.git'
+    siteUrl = 'https://github.com/PaulinaKornatowicz/Kotlin-Android-Permissions-DeviceInfo'
+    gitUrl = 'https://github.com/PaulinaKornatowicz/Kotlin-Android-Permissions-DeviceInfo.git'
 
-    libraryVersion = '1.1'
+    libraryVersion = '1.0'
 
-    developerId = 'aniloya'
-    developerName = 'Anirudh Loya'
-    developerEmail = 'loya.anirudh@gmail.com'
+    developerId = 'paulinakornatowicz'
+    developerName = 'Paulina Kornatowicz'
+    developerEmail = 'paulina.kornatowicz@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -56,8 +56,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
     testCompile 'junit:junit:4.12'
 
 }

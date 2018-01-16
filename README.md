@@ -32,8 +32,8 @@ class MainActivity : PermissionsActivity()
 import android.Manifest
 import android.os.Bundle
 import android.util.Log
-import io.vrinda.kotlinpermissions.PermissionCallBack
-import io.vrinda.kotlinpermissions.PermissionsActivity
+import com.paulinakornatowicz.kotlinpermissions.PermissionCallBack
+import com.paulinakornatowicz.kotlinpermissions.PermissionsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : PermissionsActivity() {
@@ -74,7 +74,7 @@ class MainActivity : PermissionsActivity() {
 #Dependencies
 Add this to your app build.gradle
 ```
-compile 'io.vrinda.kotlinpermissions:kotlinpermissions:1.1'
+compile 'com.paulinakornatowicz.kotlinpermissions:kotlinpermissions:1.0'
 ```
 #DeviceInfo Usage
 ```
